@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>You are listing to WKKQ</title>
+
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		
+		<link href="stream/css/shiPlayer.css" rel="stylesheet"/>
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+				<meta name="theme-color" content="#2e3141"/>
+		<meta name='msapplication-TileColor' content='#FFFFFF'>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+		<link rel='manifest' href='manifest/WKKQ.json'>
+		<meta name='mobile-web-app-capable' content='yes'>
+		<meta name='apple-mobile-web-app-capable' content='yes'>
+		<meta name='application-name' content=''>
+		<meta name='apple-mobile-web-app-status-bar-style' content='black'>
+		<meta name='apple-mobile-web-app-title' content=''>
+		<link rel='apple-touch-icon'  href=''>
+		<meta name='msapplication-TileImage' content=''>
+		<!-- metadata for sites -->
+		<link rel="icon" type="image/png" href="">
+		<meta property='og:title' content=' Web App'>
+		<meta property='og:type' content='website'>
+		<meta property='og:image' content=''>
+		<meta property='og:url' content='http://yourlocalfm.net/pwa/?id=WKKQ'>
+		<meta property='og:description' content='The best music and the most fun!'>
+		<meta name='twitter:card' content='summary'>
+		<meta name='twitter:url' content='http://yourlocalfm.net/pwa/?id=WKKQ'>
+		<meta name='twitter:title' content=''>
+		<meta name='twitter:description' content='The best music and the most fun!'>
+		<meta name='twitter:image' content='https://yourlocalfm.net/images/tower.png'>		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="js/analytics.js?v=13"></script>
+			<script>
+				var stationG = "WKKQ";
+				if('serviceWorker' in navigator) {
+					navigator.serviceWorker.register('/pwa/js/service-worker.js', { scope: '/pwa/js/' })
+					.then(function(registration) {
+					console.log('Service Worker Registered');
+					});
+					navigator.serviceWorker.ready.then(function(registration) {
+					console.log('Service Worker Ready');
+					});
+				}
+			// Check that service workers are supported
+			if ('serviceWorker' in navigator) {
+				console.log('serviceWorkers allowed');
+			  // Use the window load event to keep the page load performant
+			  
+			  // window.addEventListener('load', () => {
+				// navigator.serviceWorker.register('js/service-worker.js');
+			  // });
+			}else{
+				console.log('serviceWorkers NOT allowed');
+			}
+			</script>
+	</head>
+	<body class="is-preload" onload="getAnalytics()">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Streaming </h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+	<h2>Menu</h2>
+	<ul class="links">
+				<!-- <li><a href="login.html">Log In</a></li> -->
+		
+	</ul>
+	<a href="#" class="close">Close</a>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-149947494-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149947494-1');
+</script>
+
+
+</div>					</nav>
+
+				<!-- Wrapper 
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Generic</h2>
+								<p>Phasellus non pulvinar erat. Fusce tincidunt nisl eget ipsum.</p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major"><span id="nowplaying" ></span></h3>
+									<!-- Listen Live -->
+									<div class="shiPlayer" id="radio1" data-tag=""></div>
+									<p>
+									<center></center>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Get in touch</h2>
+							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+							<ul class="contact">
+								<li class="fa-home">
+									Untitled Inc<br />
+									1234 Somewhere Road Suite #2894<br />
+									Nashville, TN 00000-0000
+								</li>
+								<li class="fa-phone">(000) 000-0000</li>
+								<li class="fa-envelope"><a href="#">information@untitled.tld</a></li>
+								<li class="fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
+								<li class="fa-facebook"><a href="#">facebook.com/untitled-tld</a></li>
+								<li class="fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section> -->
+
+			</div>
+
+		<!-- Scripts -->
+
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+			<script src="stream/js/shiPlayer.js?v=3"></script>
+							<script>
+							$("#radio1").shiPlayer({
+							type: "icecast",
+							URL: "//",
+							mount_point: "",
+							radio_logo: "",
+							});
+							</script>
+
+	</body>
+</html>
